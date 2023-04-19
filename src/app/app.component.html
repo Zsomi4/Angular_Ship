@@ -1,4 +1,14 @@
+<!-- 
+ File: app.component.html
+ Author: Gubis Zsombor Dániel
+ Copyright: 2022, Gubis Zsombor Dániel
+ Group: Szoft_II_N
+ Date: 2023-04-19
+ Github: https://github.com/zsomi4/
+ Licenc: GNU GPL
+ -->
 <h3>Hajók Adatai</h3>
+
 <table class="table table-striped">
     <thead>
         <tr>
@@ -21,3 +31,29 @@
 </table>
 
 <h2>Gubis Zsombor Dániel, Szoft_II_N, 2023.04.19</h2>
+<form #shipForm="ngForm" (ngSubmit)="onSubmit(shipForm)">
+    <div class="form-group">
+      <label for="name">Név</label>
+      <input type="text" class="form-control" name="name" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="length">Hosszúság</label>
+      <input type="number" class="form-control" name="length" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="price">Ár</label>
+      <input type="number" class="form-control" name="price" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="person">Személyek száma</label>
+      <input type="number" class="form-control" name="person" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="trailer">Trailer</label>
+      <input type="text" class="form-control" name="trailer" ngModel required>
+    </div>
+    <button type="submit" class="btn btn-primary">Hozzáadás</button>
+  </form>
+  
+  
+  
