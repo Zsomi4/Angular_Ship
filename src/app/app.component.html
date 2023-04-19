@@ -1,0 +1,23 @@
+<h3>Hajók Adatai</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Hosszúág</th>
+            <th>Ár</th>
+            <th>Személy</th>
+            <th>Trailer</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ships of ships">
+            <td>{{ships.name}}</td>
+            <td>{{ships.length}}</td>
+            <td>{{ships.price}}</td>
+            <td>{{ships.person}}</td>
+            <td>{{ships.trailer}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Gubis Zsombor Dániel, Szoft_II_N, 2023.04.19</h2>
